@@ -3,6 +3,7 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .topper {
@@ -65,6 +66,13 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     color: #E5E7EB;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.sarcasm {
+    display: contents;
+    font-style: italic;
 }
 
 .title_button {
@@ -87,22 +95,21 @@ body {
 .info_header {
     display: flex;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 10px;
+    margin: 40px;
     justify-content: center;
-    font-size: larger;
-    font-weight: 700;
+    font-size: 39px;
+    font-weight: 900;
 }
 
 .info_images {
     display: flex;
     justify-content: center;
-    flex-wrap: ;
 }
 
 .image_and_caption {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .image {
@@ -114,25 +121,58 @@ body {
     display: flex;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: center;
+    width: 75%;
+    padding: 10px;
     align-content: center;
 }
 
 .quote {
     display: flex;
     justify-content: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
     align-items: center;
     flex-direction: column;
+    background-color: #E5E7EB;
 }
 
-.buy {
+blockquote {
+    /*display: flex;*/
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.person {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    align-self: flex-end;
+    margin-right: 18%;
 }
 
+.blue {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882F6;
+    margin: 48px;
+    justify-content: space-around;
+    align-items: center;
+    color: #F9FAF8;
+}
 .disclaim {
     display: flex;
+    background-color: #1F2937;
+    color: #F9FAF8;
     margin-top: auto;
     flex-direction: column;
     align-items: center;
 }
+
+
