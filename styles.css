@@ -96,6 +96,7 @@ body {
 .info_images {
     display: flex;
     justify-content: center;
+    flex-wrap: ;
 }
 
 .image_and_caption {
